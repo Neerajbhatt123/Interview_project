@@ -4,6 +4,7 @@ const testScoreSchema = new mongoose.Schema({
   round1: {
     type: Number,
     required: true,
+    max: 10,
   },
   round2: {
     type: Number,
@@ -12,6 +13,7 @@ const testScoreSchema = new mongoose.Schema({
   round3: {
     type: Number,
     required: true,
+    max: 10,
   },
 });
 

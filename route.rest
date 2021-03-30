@@ -1,0 +1,32 @@
+
+GET http://localhost:3000/testScores
+###
+
+
+GET http://localhost:3000/testScores/15
+
+###
+
+GET  http://localhost:3000/candidates/kjhsdyui231
+###
+
+
+POST http://localhost:3000/candidates
+Content-Type: application/json
+
+{
+    "name": "Neeraj",
+    "email": "neeraj@bhatt.com"
+}
+
+
+###
+
+POST http://localhost:3000/testScores
+Content-Type: application/json
+
+{
+    "round1": 8,
+      "round2" : 4,
+      "round3" : 9
+}

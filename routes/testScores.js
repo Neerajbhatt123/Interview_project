@@ -12,6 +12,33 @@ router.get("/", async (req, res) => {
     res.status(500).json({ message: err.message });
   }
 });
+
+
+// UnderTesting form maximum !!!
+//router.get("/", async(req,res) =>{
+//try {
+
+  //const averageScore = await TestScore.aggregate(
+   //[{$group: {_id: "$name",
+     //      avgAmount: { $avg: { $multiply: [ "$round1", "$round2","$round3"] } },
+       //  } } ]);
+  //}
+  //catch(err){
+    //res.status(500).json({message: err.message});
+  //} 
+//});
+
+// UnderTesting form maximum !!!
+
+// router.get("/", async (req, res) => {
+//   try {
+//     const testScoresHigh = await TestScore.find().sort({ age: -1 }).limit(1);
+//     res.json(testScoresHigh);
+//   } catch (err) {
+//     res.status(500).json({ message: err.message });
+//   }
+// });
+
 // getting one candidate
 router.get("/:id", (req, res) => {
   res.send(req.param.id);
